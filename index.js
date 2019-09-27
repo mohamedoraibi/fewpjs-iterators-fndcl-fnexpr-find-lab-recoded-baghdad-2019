@@ -8,6 +8,6 @@ function testFunc() {
 function superbowlWin(record){
 
 let o=record.find(record => record.result === "W");
-return o
+return o.result
 }
 
