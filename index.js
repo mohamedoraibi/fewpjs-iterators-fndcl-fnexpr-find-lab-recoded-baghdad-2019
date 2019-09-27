@@ -8,8 +8,11 @@ function testFunc() {
 function superbowlWin(record){
 let o=record.find(record => record.result === "W");
 
-if(o == "")
+if(o === undefined)
+{
+  return o
+}
+else{return o.result}
 
-return o.result
 }
 
